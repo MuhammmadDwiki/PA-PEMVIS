@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77BECAC7-9953-471A-84DB-EFEEB992B0BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PAPEM.My.MyApplication</StartupObject>
+    <RootNamespace>PAPEM</RootNamespace>
+    <AssemblyName>PAPEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PAPEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PAPEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>..\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditProfile.Designer.vb">
+      <DependentUpon>EditProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegis.Designer.vb">
+      <DependentUpon>FormRegis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahDataBarang.Designer.vb">
+      <DependentUpon>FormTambahDataBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahDataBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksi.Designer.vb">
+      <DependentUpon>FormTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtama.Designer.vb">
+      <DependentUpon>FormUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtamaUser.Designer.vb">
+      <DependentUpon>FormUtamaUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtamaUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegis.resx">
+      <DependentUpon>FormRegis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahDataBarang.resx">
+      <DependentUpon>FormTambahDataBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtama.resx">
+      <DependentUpon>FormUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtamaUser.resx">
+      <DependentUpon>FormUtamaUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_105140980-stock-illustration-tuna-fishing-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLogo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X Ikon Vektor, Vektor, Ilustrasi, Desain PNG dan Vektor dengan Background Transparan untuk Unduh Gratis.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_Ikon_Vektor__Vektor__Ilustrasi__Desain_PNG_dan_Vektor_dengan_Background_Transparan_untuk_Unduh_Gratis-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beige Minimalist Casual New Collection Bag Desktop Prototype %2814%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
